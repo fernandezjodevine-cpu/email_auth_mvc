@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 session_start();
-require_once 'app/controllers/AuthController.php';
+require_once __DIR__ . '/controllers/AuthController.php';
 $controller = new AuthController();
 $action = $_GET['action'] ?? 'login';
 

@@ -101,14 +101,14 @@ class AuthController {
 
             // Instead of echo, render a styled success page
             $message = "Registration successful! Please check your email to verify your account.";
-            require 'app/views/message.php'; // create message.php as a styled card page
+            require __DIR__ . '/../views/message.php'; // create message.php as a styled card page
             exit();
         } else {
             $error = "Registration failed! Email may already exist.";
         }
     }
 
-    require 'app/views/register.php';
+    require __DIR__ . '/../views/register.php';
 }
 
     // ================== VERIFY EMAIL ==================
@@ -124,7 +124,7 @@ class AuthController {
             $error = "No token provided!";
         }
 
-        require 'app/views/verify_email.php';
+        require __DIR__ . '/../views/verify_email.php';
     }
 
     // ================== LOGIN ==================
@@ -138,13 +138,13 @@ class AuthController {
 
             if(!$user) {
                 $error = "Email not found or not verified!";
-                require 'app/views/login.php';
+                require __DIR__ . '/../views/login.php';
                 return;
             }
 
             if(!password_verify($password, $user['password'])) {
                 $error = "Incorrect password!";
-                require 'app/views/login.php';
+                require __DIR__ . '/../views/login.php';
                 return;
             }
 
@@ -165,7 +165,7 @@ class AuthController {
             exit();
         }
 
-        require 'app/views/login.php';
+        require __DIR__ . '/../views/login.php';
     }
 
     // ================== OTP ==================
@@ -187,7 +187,7 @@ class AuthController {
             }
         }
 
-        require 'app/views/otp.php';
+        require __DIR__ . '/../views/otp.php';
     }
 
     // ================== RESEND OTP ==================
@@ -216,7 +216,7 @@ class AuthController {
             header("Location: index.php?action=login");
             exit();
         }
-        require 'app/views/home.php';
+        require __DIR__ . '/../views/home.php';
     }
 
     // ================== LOGOUT ==================

@@ -1,4 +1,4 @@
-<?php include 'app/views/templates/header.php'; ?>
+<?php include 'views/templates/header.php'; ?>
 <div class="card">
 <h2>Login</h2>
 <?php if(isset($error)) echo "<div class='message'>$error</div>"; ?>
@@ -9,4 +9,4 @@
 </form>
 <p>No account? <a href="index.php?action=register">Register</a></p>
 </div>
-<?php include 'app/views/templates/footer.php'; ?>
+<?php include 'views/templates/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'app/views/templates/header.php'; ?>
+<?php include 'views/templates/header.php'; ?>
 
 <div class="card">
     <h2>Enter OTP</h2>
@@ -46,4 +46,4 @@ const timer = setInterval(() => {
 }, 1000);
 </script>
 
-<?php include 'app/views/templates/footer.php'; ?>
+<?php include 'views/templates/footer.php'; ?>
