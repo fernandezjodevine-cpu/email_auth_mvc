@@ -1,0 +1,12 @@
+<?php include 'app/views/templates/header.php'; ?>
+<div class="card">
+<h2>Login</h2>
+<?php if(isset($error)) echo "<div class='message'>$error</div>"; ?>
+<form method="POST">
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+<p>No account? <a href="index.php?action=register">Register</a></p>
+</div>
+<?php include 'app/views/templates/footer.php'; ?>

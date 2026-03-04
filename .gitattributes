@@ -1,0 +1,12 @@
+# Keep PHP, JS, CSS, HTML consistent
+*.php text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Composer files
+composer.json text eol=lf
+composer.lock text eol=lf
+
+# All other text files
+*.txt text eol=lf
