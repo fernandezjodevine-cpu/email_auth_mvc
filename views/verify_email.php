@@ -7,4 +7,5 @@ if(isset($error)) echo "<p>$error</p>";
 ?>
 <p><a href="index.php?action=login">Go to Login</a></p>
 </div>
+
 <?php include 'views/templates/footer.php'; ?>

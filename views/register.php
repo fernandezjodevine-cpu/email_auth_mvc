@@ -1,6 +1,7 @@
 <?php include 'views/templates/header.php'; ?>
 
 <div class="card">
+    
     <h2>Register</h2>
 
     <?php if(isset($error)): ?>

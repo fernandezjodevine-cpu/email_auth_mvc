@@ -23,6 +23,7 @@ class User {
         return false;
     }
 
+    
     // ================== EMAIL VERIFICATION ==================
     public function storeToken($user_id, $token) {
         $stmt = $this->conn->prepare(

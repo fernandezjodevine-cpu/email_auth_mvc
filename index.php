@@ -14,4 +14,5 @@ switch($action) {
     case 'logout': $controller->logout(); break;
     default: $controller->login(); break;
 }
+
 ?>

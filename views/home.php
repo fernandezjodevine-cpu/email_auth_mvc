@@ -1,6 +1,7 @@
 <?php include 'views/templates/header.php'; ?>
 
 <div class="card home-box">
+    
     <h2>Welcome!</h2>
     <p>Hello, <strong><?php echo htmlspecialchars($_SESSION['fullname']); ?></strong></p>
     <p>You have successfully logged in.</p>

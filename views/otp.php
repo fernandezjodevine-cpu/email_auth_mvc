@@ -46,4 +46,5 @@ const timer = setInterval(() => {
 }, 1000);
 </script>
 
+
 <?php include 'views/templates/footer.php'; ?>
